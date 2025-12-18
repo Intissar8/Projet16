@@ -46,7 +46,7 @@ public class RdvController {
                 ))
                 .retrieve()
                 .bodyToMono(String.class)
-                .block();
+                .subscribe();
 
         return savedRdv;
     }
